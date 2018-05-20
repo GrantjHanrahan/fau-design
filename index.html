@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Finder Code Test</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div class="header-banner">
+        <h1>My awesome website</h1>
+      </div>
+      <nav>
+        <ul class="header-navbar" role="navigation">
+          <li><a class="navbar-link" href="#">Home</a></li>
+          <li><a class="navbar-link" href="#">Members</a></li>
+          <li><a class="navbar-link" href="#">Photos</a></li>
+          <li><a class="navbar-link" href="#">Pages</a></li>
+          <li><a class="navbar-link" href="#">Discussions</a></li>
+          <li><a class="navbar-link" href="#" id="navbar-dropdown" aria-haspopup="true">More</a>
+            <ul>
+              <li><a class="navbar-link" href="#">Link</a></li>
+              <li><a class="navbar-link" href="#">Link</a></li>
+              <li><a class="navbar-link" href="#">Link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="content">
+      <div class="content-wrapper">
+        <h2>Top five posts</h2>
+        <div id="content-posts">
+          <!-- JSON articles response -->
+        </div>
+      </div>
+
+      <aside>
+        <div id="aside-image">
+          <h3>Image of the week</h3>
+          <img src="images/family-guy-css.gif" alt="GIF of Peter Griffin from Family Guy struggling with CSS" />
+          <button class="aside-button">See more</button>
+        </div>
+
+        <div id="aside-quote">
+          <h3>Quote of the week</h3>
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisque ligula orci, rutrum eget ex ac, condimentum ultrices.<cite> - Johnny Five</cite>
+          </blockquote>
+
+          <button class="aside-button">More quotes</button>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</body>
+
+</html>
