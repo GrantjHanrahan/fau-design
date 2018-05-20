@@ -73,10 +73,6 @@
   color: #fff;
 }
 
-#navbar-dropdown:hover, ul {
-  opacity: 1;
-}
-
 
 /* Content, Posts
 ----------------------------------------------------------------------------- */
@@ -189,7 +185,6 @@ cite {
 
 /* Media Queries
 ----------------------------------------------------------------------------- */
-
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 300px) and (max-width : 640px){
