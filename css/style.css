@@ -9,10 +9,8 @@
   margin: 0 auto;
   padding: 0.5rem;
   background-color: #d5d9dc;
-  /* border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px; */
 }
+
 
 /* Header
 ----------------------------------------------------------------------------- */
@@ -39,6 +37,7 @@
   display: flex;
   background-color: #fff;
   list-style: none;
+  overflow: hidden;
 }
 
 .header-navbar ul {
@@ -75,6 +74,7 @@
   opacity: 1;
 }
 
+
 /* Content, Posts
 ----------------------------------------------------------------------------- */
 
@@ -101,6 +101,17 @@
   color: #1591fe;
 }
 
+.post {
+  margin: 1.2rem;
+  padding-top: 0.8rem;
+  border-bottom: 2px solid #d5d9dc;
+  padding-bottom: 1.6rem;
+}
+
+.post:last-of-type {
+  border-bottom: none;
+}
+
 .post a {
   color: #1591fe;
   font-size: 1.1rem;
@@ -114,17 +125,6 @@
 .post p {
   font-size: 0.9rem;
   line-height: 1.3rem;
-}
-
-.post {
-  margin: 1.2rem;
-  padding-top: 0.8rem;
-  border-bottom: 2px solid #d5d9dc;
-  padding-bottom: 1.6rem;
-}
-
-.post:last-of-type {
-  border-bottom: none;
 }
 
 
@@ -187,32 +187,19 @@ cite {
 /* Media Queries
 ----------------------------------------------------------------------------- */
 
-@media (min-width: 600px) {
-  .header-navbar {
-    display:block;
-  }
-}
-
-@media only screen and (max-width:895px) { /* When main and sidebar get too narrow*/
-  .page {
-    display: block;
-    /* width: 100%;
-    margin: 0; */
-  }
-
-  /* img {
-    width: 80%;
-  } */
-
-  /* .content-wrapper, aside {
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+  .header-navbar a {
+    float: none;
     width: 100%;
-    margin: 0;
-  } */
+  }
 }
 
-@media only screen and (max-width:750px) { /* When main and sidebar get too narrow */
-  .content {
-    display: block;
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .header-navbar a {
+    float: none;
+    width: 100%;
   }
 
   .content-wrapper, aside {
@@ -221,14 +208,20 @@ cite {
   }
 }
 
-
-@media only screen and (max-width:640px) { /* When navigation overflows screen*/
-  .nav, .nav li {
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .page {
     display: block;
-    margin-bottom: 1em;
   }
+  .content-wrapper, aside {
+    width: 100%;
+    margin: 0;
+  }
+}
 
-  .nav li > a {
-    padding: 10px;
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .page {
+    display: block;
   }
 }

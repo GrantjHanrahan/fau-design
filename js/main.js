@@ -12,6 +12,7 @@ $(function(){
     success: function( data ) {
       showArticles( data );
     },
+
     // Code to run if the request fails.
     // The request, the status code of the request and the error thrown are passed to the 'error' function as arguments
     error: function( xhr, status, errorThrown ) {
@@ -20,6 +21,7 @@ $(function(){
       console.log( "Status: " + status );
       console.dir( xhr );
     },
+
     // Code to run when the request is completed, regardless of success or failure
     complete: function( xhr, status ) {
       console.log( "The request is complete." );
