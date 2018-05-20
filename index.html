@@ -14,22 +14,22 @@
 <body>
   <div class="page">
     <header>
-      <div class="header-banner">
+      <div class="header-banner" role="banner">
         <h1>My awesome website</h1>
       </div>
       <nav>
         <ul class="header-navbar" role="navigation">
-          <li><a class="navbar-link" href="#">Home</a></li>
-          <li><a class="navbar-link" href="#">Members</a></li>
-          <li><a class="navbar-link" href="#">Photos</a></li>
-          <li><a class="navbar-link" href="#">Pages</a></li>
-          <li><a class="navbar-link" href="#">Discussions</a></li>
-          <li><a class="navbar-link" href="#">More</a></li>
+          <li><a class="navbar-link" title="home" href="#">Home</a></li>
+          <li><a class="navbar-link" title="members" href="#">Members</a></li>
+          <li><a class="navbar-link" title+"photos" href="#">Photos</a></li>
+          <li><a class="navbar-link" title="pages" href="#">Pages</a></li>
+          <li><a class="navbar-link" title="discussions" href="#">Discussions</a></li>
+          <li><a class="navbar-link" title="more" href="#">More</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="content">
+    <div class="content" role="main">
       <div class="content-wrapper">
         <h2>Top five posts</h2>
         <div id="content-posts">
@@ -37,7 +37,7 @@
         </div>
       </div>
 
-      <aside>
+      <aside role="complementary">
         <div id="aside-image">
           <h3>Image of the week</h3>
           <img src="images/family-guy-css.gif" alt="GIF of Peter Griffin from Family Guy struggling with CSS" />
