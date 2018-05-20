@@ -1,3 +1,7 @@
+
+/* Page layout
+----------------------------------------------------------------------------- */
+
 * {
   box-sizing: border-box;
   font-size: 100%;
@@ -37,7 +41,6 @@
   display: flex;
   background-color: #fff;
   list-style: none;
-  overflow: hidden;
 }
 
 .header-navbar ul {
@@ -187,41 +190,39 @@ cite {
 /* Media Queries
 ----------------------------------------------------------------------------- */
 
+
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-  .header-navbar a {
-    float: none;
-    width: 100%;
+@media only screen and (min-width : 300px) and (max-width : 640px){
+
+  .navbar-link {
+    font-size: 0.5rem;
+    padding: 0.4rem;
+  }
+
+  .content {
+    display: block;
+  }
+
+  .content-wrapper, aside {
+    min-width: 100%;
+    margin: 0;
   }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-  .header-navbar a {
-    float: none;
-    width: 100%;
+@media only screen and (min-width : 640px) and (max-width : 800px) {
+
+  .navbar-link {
+    font-size: 0.8rem;
+    padding: 0.9rem;
+  }
+
+  .content {
+    display: block;
   }
 
   .content-wrapper, aside {
-    width: 100%;
+    min-width: 100%;
     margin: 0;
-  }
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-  .page {
-    display: block;
-  }
-  .content-wrapper, aside {
-    width: 100%;
-    margin: 0;
-  }
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-  .page {
-    display: block;
   }
 }
